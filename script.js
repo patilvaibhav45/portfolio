@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
             title: "E-commerce Platform Development",
-            years: "2023-2024",
+            years: "",
             image: "https://cdn.acowebs.com/wp-content/uploads/2019/02/Impact-of-eCommerce-On-Society.png",
             description: [
                 "Built a complete e-commerce application with secure login, product listing, cart, and checkout features",
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: "Personal Portfolio Website",
-            years: "2022-2023",
+            years: "",
             image: "https://c8.alamy.com/comp/2PX4CXK/personal-portfolio-with-profile-data-resume-or-self-improvement-to-attract-clients-and-employers-in-flat-cartoon-hand-drawn-templates-illustration-2PX4CXK.jpg",
             description: [
                 "Developed a fully responsive personal website with HTML, CSS, JavaScript",
