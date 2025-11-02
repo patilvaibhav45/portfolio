@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = {
+    const info = document.querySelectorAll('.info-section');
+    const appearInfo = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px" 
     };
@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 appearOnScroll.unobserve(entry.target);
             }
         });
-    }, appearOptions);
+    }, appearInfo);
 
-    faders.forEach(fader => {
+    info.forEach(fader => {
         appearOnScroll.observe(fader);
     });
 
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
     const skills = {
-        "Languages & Frameworks": ["Angular", "Node.js", "Express.js", "JavaScript", "HTML", "CSS"],
+        "Languages & Frameworks": ["Angular", "Node.js", "Express.js", "JavaScript", "HTML5", "CSS3", "React"],
         "Database & Tools": ["MongoDB", "RxJS", "NgRx", "Jest", "Git", "GitHub"],
         "Dev Practices": ["REST APIs", "Unit Testing", "i18n", "Agile (SCRUM)"],
     };
@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
         years: "2018-2023"
     };
 
-    const educationDetailsDiv = document.getElementById('education-details');
-    educationDetailsDiv.innerHTML = `
+    const educationsectionDiv = document.getElementById('education-section');
+    educationsectionDiv.innerHTML = `
         <p><strong>${education.institute}</strong></p>
         <p>${education.degree}</p>
         <p class="cgpa">CGPA: ${education.cgpa}</p>
@@ -74,26 +74,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const experiences = [
         {
             title: "Software Developer",
-            company: "SynIT Solutions Private Limited., Pune",
+            company: "SynIT Solutions Private Limited, Pune",
             duration: "5/2023-Present",
             description: [
-                "Developed a ticket booking platform including customer-facing site, admin dashboard, and booking application",
-                "Built reusable Angular components and managed code using Nx monorepo architecture",
-                "Integrated REST APIs and implemented event-driven backend routes for seamless communication and modularity",
-                "Leveraged RxJS and NgRx for robust asynchronous data handling and application state management",
-                "Created i18n multi-language support to improve global user reach",
-                "Wrote efficient MongoDB queries and optimized backend endpoints for performance",
-                "Translated UI designs from Figma into responsive, pixel-perfect layouts",
-                "Diagnosed and resolved complex bugs and issues in existing production code",
-                "Conducted unit testing using Jest to ensure code reliability",
-                "Maintained high code quality by enforcing ESLint rules and clean architecture practices",
-                "Developed static site using 11ty and Nunjucks for marketing presence",
-                "Participated in daily SCRUM, sprint planning, and retrospectives in Agile teams"
+                "Developed and maintained WOP m-ticket, a full-stack ticket booking platform with customer portal, admin dashboard, and booking management system",
+                "Built RESTful APIs using Node.js and Express.js, implementing CQRS pattern to separate command and query responsibilities",
+                "Created Angular components with Nx monorepo, managing complex state using NgRx and handling async operations with RxJS",
+                "Worked with MongoDB for data storage, writing efficient queries and using aggregation for complex data retrieval",
+                "Developed a static marketing site using 11ty (Eleventy) and Nunjucks templating to enhance online presence",
+                "Improved application performance by optimizing database queries and implementing proper indexing strategies ",
+                "Translated UI designs from Figma into responsive, pixel-perfect web pages",
+                "Implemented internationalization (i18n) to support multiple languages for global users",
+                "Fixed bugs and resolved issues in production code, ensuring system stability",
+                "Wrote unit tests using Jest and maintained code quality with ESLint rules",
+                "Participated in Agile/SCRUM ceremonies including daily standups, sprint planning, and retrospectives",
+                "Contributed to Blancreme e-commerce project, developing React frontend components and integrating with PHP backend APIs",
+                "Gained exposure to PHP backend development while working on API integration and data flow"
             ]
         }
     ];
 
-    const experienceDetailsDiv = document.getElementById('experience-details');
+    const experiencesectionDiv = document.getElementById('experience-section');
     experiences.forEach(exp => {
         const expItem = document.createElement('div');
         expItem.classList.add('experience-item');
@@ -105,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ${exp.description.map(item => `<li>${item}</li>`).join('')}
             </ul>
         `;
-        experienceDetailsDiv.appendChild(expItem);
+        experiencesectionDiv.appendChild(expItem);
     });
 
     const projects = [
@@ -154,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.fade-in').forEach(section => {
+    document.querySelectorAll('.info-section').forEach(section => {
         observer.observe(section);
     });
 });

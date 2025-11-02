@@ -22,7 +22,7 @@ body {
     overflow-x: hidden; 
 }
 
-.hero {
+.profile {
     background: linear-gradient(135deg, var(--primary-color) 0%, #0056b3 100%);
     color: #fff;
     text-align: center;
@@ -31,7 +31,7 @@ body {
     overflow: hidden; 
 }
 
-.hero-content {
+.profile-content {
     position: relative;
     z-index: 1;
 }
@@ -57,14 +57,14 @@ body {
     object-fit: cover;
 }
 
-.hero h1 {
+.profile h1 {
     font-size: 3.2em;
     margin: 10px 0;
     font-weight: 700;
     animation: fadeInDown 1s ease-out;
 }
 
-.hero .tagline {
+.profile .tagline {
     font-size: 1.4em;
     margin-bottom: 30px;
     font-weight: 300;
@@ -198,7 +198,7 @@ h2::after {
     box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
 }
 
-.skills-grid {
+.skills-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
@@ -297,7 +297,7 @@ h2::after {
     color: var(--text-color);
 }
 
-.projects-grid {
+.projects-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -427,11 +427,11 @@ footer i {
 }
 
 @media (max-width: 768px) {
-    .hero h1 {
+    .profile h1 {
         font-size: 2.5em;
     }
 
-    .hero .tagline {
+    .profile .tagline {
         font-size: 1.2em;
     }
 
@@ -451,21 +451,21 @@ footer i {
         padding: 30px 20px;
     }
 
-    .skills-grid, .projects-grid {
+    .skills-section, .projects-section {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    .hero {
+    .profile {
         padding: 60px 15px;
     }
 
-    .hero h1 {
+    .profile h1 {
         font-size: 2em;
     }
 
-    .hero .tagline {
+    .profile .tagline {
         font-size: 1em;
     }
 
