@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
     const skills = {
-        "Languages & Frameworks": ["Angular", "Node.js", "Express.js", "JavaScript", "HTML5", "CSS3", "React"],
+        "Languages & Frameworks": ["Angular", "Node.js", "Express.js", "JavaScript", "HTML5", "CSS3", "React", "Python"],
         "Database & Tools": ["MongoDB", "RxJS", "NgRx", "Jest", "Git", "GitHub"],
         "Dev Practices": ["REST APIs", "Unit Testing", "i18n", "Agile (SCRUM)"],
     };
