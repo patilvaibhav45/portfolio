@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
     const skills = {
-        "Languages & Frameworks": ["Angular", "Node.js", "Express.js", "JavaScript", "HTML5", "CSS3", "React", "Python"],
-        "Database & Tools": ["MongoDB", "RxJS", "NgRx", "Jest", "Git", "GitHub"],
+        "Languages & Frameworks": ["Angular","React", "Node.js", "Express.js", "JavaScript", "HTML5", "CSS3", "Python"],
+        "Database & Tools": ["MongoDB", "MySQL(SQL)", "RxJS", "NgRx", "Jest", "Git", "GitHub"],
         "Dev Practices": ["REST APIs", "Unit Testing", "i18n", "Agile (SCRUM)"],
     };
 
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const experiences = [
         {
             title: "Software Developer",
-            company: "SynIT Solutions Private Limited, Pune",
+            company: "SYN IT Solutions Private Limited, Pune",
             duration: "5/2023-Present",
             description: [
                 "Developed and maintained WOP m-ticket, a full-stack ticket booking platform with customer portal, admin dashboard, and booking management system",
