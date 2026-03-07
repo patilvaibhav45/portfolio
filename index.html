@@ -1,75 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vaibhav Patil - Professional Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="profile">
-        <div class="profile-content">
-            <div class="profile-pic-container">
-                <img src="./avataaars.svg" alt="Vaibhav Patil" class="profile-pic">
-            </div>
-            <h1 id="name"></h1>
-            <p class="tagline">Software Engineer Specializing in Scalable Web & Data Applications</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/vaibhav-patil-49171a1a2/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:vaibhavrpp45@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/patilvaibhav45" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
+      <div class="profile-content">
+        <div class="profile-pic-container">
+          <img src="./avataaars.svg" alt="Vaibhav Patil" class="profile-pic" />
         </div>
+        <h1 id="name"></h1>
+        <p class="tagline">
+          Software Engineer Specializing in Scalable Web & Data Applications
+        </p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/vaibhav-patil-49171a1a2/"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:vaibhavrpp45@gmail.com" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://github.com/patilvaibhav45"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
     </header>
 
     <nav class="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
     </nav>
 
     <main class="container">
-        <section id="about" class="info-section">
-            <h2>About Me</h2>
-            <p class="bio">
-                I am a Full Stack Developer with nearly 3 years of experience building scalable web applications and data-driven systems. My frontend expertise lies in architecting complex, interactive user interfaces using both Angular and React.
-                On the backend, I design robust RESTful APIs and microservices using Node.js, while leveraging Python for data manipulation and backend automation tasks.
-                I am passionate about translating business requirements into high-performance technical solutions and writing clean, maintainable code.
-            </p>
-            <a href="./Vaibhav_Patil_Full_Stack_Developer.pdf" target="_blank" class="btn primary-btn" download>Download Resume <i class="fas fa-download"></i></a>
-        </section>
+      <section id="about" class="info-section">
+        <h2>About Me</h2>
+        <p class="bio">
+          I am a Full-Stack Software Developer with nearly 3 years of experience
+          architecting scalable web applications and responsive user interfaces.
+          My core expertise lies in the MEAN stack (MongoDB, Express, Angular,
+          Node.js) and React, alongside managing both NoSQL and relational
+          databases. I specialize in designing robust RESTful APIs, managing
+          complex frontend state using RxJS and NgRx, and implementing
+          high-performance architectures like CQRS. Passionate about clean code
+          and continuous integration (CI/CD), I thrive on translating complex
+          business requirements into seamless, high-performing digital
+          experiences.
+        </p>
+        <a
+          href="./Vaibhav_Patil_Full_Stack_Developer.pdf"
+          target="_blank"
+          class="btn primary-btn"
+          download
+          >Download Resume <i class="fas fa-download"></i
+        ></a>
+      </section>
 
-        <section id="skills" class="info-section">
-            <h2>Skills & Technologies</h2>
-            <div class="skills-section" id="skills-list"></div>
-        </section>
+      <section id="skills" class="info-section">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-section" id="skills-list"></div>
+      </section>
 
-        <section id="experience" class="info-section">
-            <h2>Professional Experience</h2>
-            <div id="experience-section"></div>
-        </section>
+      <section id="experience" class="info-section">
+        <h2>Professional Experience</h2>
+        <div id="experience-section"></div>
+      </section>
 
-        <section id="projects" class="info-section">
-            <h2>Featured Projects</h2>
-            <div class="projects-section" id="projects-list"></div>
-        </section>
+      <section id="projects" class="info-section">
+        <h2>Featured Projects</h2>
+        <div class="projects-section" id="projects-list"></div>
+      </section>
 
-        <section id="education" class="info-section">
-            <h2>Education</h2>
-            <div id="education-section" class="card"></div>
-        </section>
+      <section id="education" class="info-section">
+        <h2>Education</h2>
+        <div id="education-section" class="card"></div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="current-year"></span> Vaibhav Patil. All rights reserved.</p>
-        <p>Designed with <i class="fas fa-heart"></i> by Vaibhav Patil</p>
+      <p>
+        &copy; <span id="current-year"></span> Vaibhav Patil. All rights
+        reserved.
+      </p>
+      <p>Designed with <i class="fas fa-heart"></i> by Vaibhav Patil</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

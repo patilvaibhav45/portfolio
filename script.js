@@ -5,20 +5,25 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(this.getAttribute("href")).scrollIntoView({
         behavior: "smooth",
       });
-      
-      document.querySelectorAll("nav a").forEach((item) => item.classList.remove("active"));
+
+      document
+        .querySelectorAll("nav a")
+        .forEach((item) => item.classList.remove("active"));
       this.classList.add("active");
     });
   });
 
-  const sectionObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-        observer.unobserve(entry.target); // Stop observing once it fades in
-      }
-    });
-  }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+  const sectionObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
+  );
 
   document.querySelectorAll(".info-section").forEach((section) => {
     sectionObserver.observe(section);
@@ -29,19 +34,32 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("current-year").textContent =
     new Date().getFullYear();
 
-  // Load Skills
   const skills = {
     "Languages & Frameworks": [
-      "Angular (14+)", "React", "Node.js", "TypeScript", 
-      "JavaScript (ES6+)", "Python", "Express.js", "Java (Basic)"
+      "Angular (14+)",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Python",
+      "Express.js",
+      "Java (Basic)",
     ],
     "Database & Tools": [
-      "MongoDB", "SQL (MySQL/PostgreSQL)", "Nx Monorepo", 
-      "RxJS & NgRx", "Jest", "Git & GitHub", "GCP (Basics)"
+      "MongoDB",
+      "SQL (MySQL)",
+      "Nx Monorepo",
+      "RxJS & NgRx",
+      "Jest",
+      "Git & GitHub"
     ],
     "Architecture & Practices": [
-      "Microservices Architecture", "RESTful APIs", "CI/CD Pipelines", 
-      "CQRS Pattern", "Unit Testing", "Agile (SCRUM)"
+      "Microservices Architecture",
+      "RESTful APIs",
+      "CI/CD Pipelines",
+      "CQRS Pattern",
+      "Unit Testing",
+      "Agile (SCRUM)",
     ],
   };
 
@@ -74,26 +92,19 @@ document.addEventListener("DOMContentLoaded", () => {
     <p>${education.years}</p>
   `;
 
-  // Load Experience
   const experiences = [
     {
       title: "Software Developer",
       company: "SYN IT Solutions Private Limited, Pune",
-      duration: "5/2023-Present",
+      duration: "05/2023 - Present",
       description: [
-        "Developed and maintained WOP m-ticket, a full-stack ticket booking platform with customer portal, admin dashboard, and booking management system",
-        "Designed and implemented RESTful APIs and microservices, utilizing CQRS patterns to separate command/query responsibilities and optimize full-stack scalability.",
-        "Developed and maintained sophisticated web applications using Angular and Nx Monorepo for scalable project structuring, ensuring high performance and responsiveness.",
-        "Worked with MongoDB for data storage, writing efficient queries and using aggregation for complex data retrieval",
-        "Spearheaded frontend development using Angular (14+), managing complex application state with NgRx State Management and orchestrating asynchronous data flows via RxJS.",
-        "Improved application performance by optimizing database queries and implementing proper indexing strategies",
-        "Translated UI designs from Figma into responsive, pixel-perfect web pages",
-        "Implemented internationalization (i18n) to support multiple languages for global users",
-        "Fixed bugs and resolved issues in production code, ensuring system stability",
-        "Ensured code quality using testing frameworks (Jest) and supported the optimization of CI/CD pipelines and deployment processes.",
-        "Collaborated with stakeholders to translate business requirements into technical solutions, while participating in code reviews to enforce coding best practices.",
-        "Contributed to Blancreme e-commerce project, developing React frontend components and integrating with PHP backend APIs",
-        "Gained exposure to PHP backend development while working on API integration and data flow"
+        "Architected and deployed 'WOP m-ticket', a full-stack ticket booking platform, implementing the CQRS pattern in Node.js/Express to optimize backend scalability.",
+        "Spearheaded frontend development using Angular (14+) within a scalable Nx Monorepo, expertly managing complex application state with NgRx and asynchronous data flows via RxJS.",
+        "Optimized MongoDB performance by designing efficient schemas, implementing proper indexing strategies, and utilizing Aggregation Pipelines for complex data retrieval.",
+        "Translated Figma UI designs into responsive, pixel-perfect web pages and implemented i18n to deliver seamless multi-language support for international users.",
+        "Contributed to the 'Blancreme' e-commerce platform by developing dynamic React frontend components and successfully integrating them with PHP backend APIs.",
+        "Ensured robust code quality through comprehensive unit testing with Jest, and actively managed CI/CD pipelines to guarantee stable, automated deployments.",
+        "Collaborated with cross-functional Agile teams to translate business requirements into technical solutions while enforcing strict coding best practices through peer reviews.",
       ],
     },
   ];
@@ -117,7 +128,8 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "E-commerce Platform Development",
       years: "",
-      image: "https://cdn.acowebs.com/wp-content/uploads/2019/02/Impact-of-eCommerce-On-Society.png",
+      image:
+        "https://cdn.acowebs.com/wp-content/uploads/2019/02/Impact-of-eCommerce-On-Society.png",
       description: [
         "Built a complete e-commerce application with secure login, product listing, cart, and checkout features",
         "Used MEAN stack and modular architecture for scalability",
@@ -126,7 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Personal Portfolio Website",
       years: "",
-      image: "https://c8.alamy.com/comp/2PX4CXK/personal-portfolio-with-profile-data-resume-or-self-improvement-to-attract-clients-and-employers-in-flat-cartoon-hand-drawn-templates-illustration-2PX4CXK.jpg",
+      image:
+        "https://c8.alamy.com/comp/2PX4CXK/personal-portfolio-with-profile-data-resume-or-self-improvement-to-attract-clients-and-employers-in-flat-cartoon-hand-drawn-templates-illustration-2PX4CXK.jpg",
       description: [
         "Developed a fully responsive personal website with HTML, CSS, JavaScript",
         "Highlighted projects, experience, and technical blog",
