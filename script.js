@@ -128,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "E-commerce Platform Development",
       years: "",
+      link:"https://github.com/patilvaibhav45/angular-node-ecommerce-app",
       image:
         "https://cdn.acowebs.com/wp-content/uploads/2019/02/Impact-of-eCommerce-On-Society.png",
       description: [
@@ -138,6 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Personal Portfolio Website",
       years: "",
+      link:"https://patilvaibhav45.github.io/portfolio/",
       image:
         "https://c8.alamy.com/comp/2PX4CXK/personal-portfolio-with-profile-data-resume-or-self-improvement-to-attract-clients-and-employers-in-flat-cartoon-hand-drawn-templates-illustration-2PX4CXK.jpg",
       description: [
@@ -152,7 +154,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const projectItem = document.createElement("div");
     projectItem.classList.add("project-card");
     projectItem.innerHTML = `
-      <img src="${project.image}" alt="${project.title} Project Image">
+      <a href="${project.link}" target="_blank">
+        <img src="${project.image}" alt="${project.title} Project Image">
+      </a>
       <div class="project-card-content">
         <h3>${project.title}</h3>
         <p class="project-years">${project.years}</p>
