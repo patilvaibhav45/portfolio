@@ -35,33 +35,37 @@ document.addEventListener("DOMContentLoaded", () => {
     new Date().getFullYear();
 
   const skills = {
-    "Languages & Frameworks": [
-      "Angular (14+)",
-      "React",
-      "Node.js",
-      "TypeScript",
-      "JavaScript (ES6+)",
-      "Python",
-      "Express.js",
-      "Java (Basic)",
-    ],
-    "Database & Tools": [
-      "MongoDB",
-      "SQL (MySQL)",
-      "Nx Monorepo",
-      "RxJS & NgRx",
-      "Jest",
-      "Git & GitHub"
-    ],
-    "Architecture & Practices": [
-      "Microservices Architecture",
-      "RESTful APIs",
-      "CI/CD Pipelines",
-      "CQRS Pattern",
-      "Unit Testing",
-      "Agile (SCRUM)",
-    ],
-  };
+  "Languages & Frameworks": [
+    "Angular (18+)",
+    "React",
+    "Node.js",
+    "Express.js",
+    "TypeScript",
+    "JavaScript (ES6+)",
+    "HTML5 & CSS3",
+    "Bootstrap"
+  ],
+  "Database & Tools": [
+    "MongoDB (Aggregation Pipelines, Indexing)",
+    "SQL",
+    "Nx Monorepo",
+    "RxJS & NgRx",
+    "Jest",
+    "Git & GitHub",
+    "Docker"
+  ],
+  "Architecture & Practices": [
+    "RESTful API Design",
+    "JWT/OAuth Authentication",
+    "CI/CD Pipelines",
+    "CQRS Pattern",
+    "Unit Testing",
+    "Agile/Scrum"
+  ],
+  "Currently Learning": [
+    "AI/ML Engineering Skills" 
+  ]
+};
 
   const skillsListDiv = document.getElementById("skills-list");
   for (const category in skills) {
@@ -93,21 +97,23 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
 
   const experiences = [
-    {
-      title: "Software Developer",
-      company: "SYN IT Solutions Private Limited, Pune",
-      duration: "05/2023 - Present",
-      description: [
-        "Architected and deployed 'WOP m-ticket', a full-stack ticket booking platform, implementing the CQRS pattern in Node.js/Express to optimize backend scalability.",
-        "Spearheaded frontend development using Angular (14+) within a scalable Nx Monorepo, expertly managing complex application state with NgRx and asynchronous data flows via RxJS.",
-        "Optimized MongoDB performance by designing efficient schemas, implementing proper indexing strategies, and utilizing Aggregation Pipelines for complex data retrieval.",
-        "Translated Figma UI designs into responsive, pixel-perfect web pages and implemented i18n to deliver seamless multi-language support for international users.",
-        "Contributed to the 'Blancreme' e-commerce platform by developing dynamic React frontend components and successfully integrating them with PHP backend APIs.",
-        "Ensured robust code quality through comprehensive unit testing with Jest, and actively managed CI/CD pipelines to guarantee stable, automated deployments.",
-        "Collaborated with cross-functional Agile teams to translate business requirements into technical solutions while enforcing strict coding best practices through peer reviews.",
-      ],
-    },
-  ];
+  {
+    title: "Software Engineer", 
+    company: "SYN IT Solutions Private Limited, Pune",
+    duration: "May 2023 - Present",
+    description: [
+      "Designed and developed RESTful APIs from scratch using Node.js and Express.js, implementing JWT-based authentication to secure endpoints and manage user sessions.", 
+      "Architected the backend for the 'WOP m-ticket' booking platform using the CQRS pattern to separate command and query responsibilities, ensuring highly scalable performance.",
+      "Managed data storage in MongoDB and reduced data loading times by ~25% through strategic indexing and complex Aggregation Pipelines.",
+      "Built responsive, pixel-perfect UIs using Angular 18+ within an Nx monorepo.", 
+      "Improved page load performance by implementing lazy loading and code splitting, validated with Lighthouse and Core Web Vitals audits.",
+      "Managed complex data streams and application state using RxJS and NgRx, reducing unnecessary re-renders and improving UI responsiveness.",
+      "Converted Figma designs into functional web pages and implemented i18n for seamless multi-language support.",
+      "Built dynamic, responsive frontend components using React for the 'Blancreme' e-commerce interface, managing data flow with a PHP/SQL backend.",
+      "Wrote comprehensive unit tests using Jest and managed Git version control and CI/CD pipelines with Docker to ensure stable, consistent deployments."
+    ],
+  },
+];
 
   const experienceSectionDiv = document.getElementById("experience-section");
   experiences.forEach((exp) => {
