@@ -98,19 +98,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const experiences = [
   {
-    title: "Software Engineer", 
-    company: "SYN IT Solutions Private Limited, Pune",
+    title: "Software Engineer",
+    company: "SYN IT Solutions Private Limited, Pune", // [cite: 56]
     duration: "May 2023 - Present",
     description: [
-      "Designed and developed RESTful APIs from scratch using Node.js and Express.js, implementing JWT-based authentication to secure endpoints and manage user sessions.", 
-      "Architected the backend for the 'WOP m-ticket' booking platform using the CQRS pattern to separate command and query responsibilities, ensuring highly scalable performance.",
-      "Managed data storage in MongoDB and reduced data loading times by ~25% through strategic indexing and complex Aggregation Pipelines.",
-      "Built responsive, pixel-perfect UIs using Angular 18+ within an Nx monorepo.", 
-      "Improved page load performance by implementing lazy loading and code splitting, validated with Lighthouse and Core Web Vitals audits.",
-      "Managed complex data streams and application state using RxJS and NgRx, reducing unnecessary re-renders and improving UI responsiveness.",
-      "Converted Figma designs into functional web pages and implemented i18n for seamless multi-language support.",
-      "Built dynamic, responsive frontend components using React for the 'Blancreme' e-commerce interface, managing data flow with a PHP/SQL backend.",
-      "Wrote comprehensive unit tests using Jest and managed Git version control and CI/CD pipelines with Docker to ensure stable, consistent deployments."
+      "Designed and developed RESTful APIs from scratch using Node.js and Express.js, implementing JWT-based authentication to secure endpoints and manage user sessions.", // [cite: 58]
+      "Architected the backend using the CQRS pattern to separate command and query responsibilities, ensuring highly scalable performance under peak travel booking loads.", // [cite: 59]
+      "Managed data storage in MongoDB and reduced data loading times by ~25% through strategic indexing and complex Aggregation Pipelines.", // [cite: 60]
+      "Built responsive, pixel-perfect UIs using Angular 18+ within an Nx monorepo. Improved page load performance by implementing lazy loading and code splitting, validated with Lighthouse and Core Web Vitals audits.", // [cite: 61, 62]
+      "Managed complex data streams and application state using RxJS and NgRx, reducing unnecessary re-renders and improving UI responsiveness.", // [cite: 63]
+      "Converted Figma designs into functional web pages in close collaboration with UX designers and product owners, and implemented i18n for seamless multi-language support.", // [cite: 64]
+      "Wrote comprehensive unit tests using Jest and managed Git version control and CI/CD pipelines with Docker to ensure stable, consistent deployments.", // [cite: 65]
+      
+      "Built dynamic, responsive frontend components using React for a user-facing e-commerce interface with a focus on performance and usability.", // [cite: 67]
+      "Managed data flow between the React frontend and a PHP backend, using SQL to efficiently query and manage relational product and order data." // [cite: 68]
     ],
   },
 ];
