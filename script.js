@@ -35,37 +35,35 @@ document.addEventListener("DOMContentLoaded", () => {
     new Date().getFullYear();
 
   const skills = {
-  "Languages & Frameworks": [
-    "Angular (18+)",
-    "React",
-    "Node.js",
-    "Express.js",
-    "TypeScript",
-    "JavaScript (ES6+)",
-    "HTML5 & CSS3",
-    "Bootstrap"
-  ],
-  "Database & Tools": [
-    "MongoDB (Aggregation Pipelines, Indexing)",
-    "SQL",
-    "Nx Monorepo",
-    "RxJS & NgRx",
-    "Jest",
-    "Git & GitHub",
-    "Docker"
-  ],
-  "Architecture & Practices": [
-    "RESTful API Design",
-    "JWT/OAuth Authentication",
-    "CI/CD Pipelines",
-    "CQRS Pattern",
-    "Unit Testing",
-    "Agile/Scrum"
-  ],
-  "Currently Learning": [
-    "AI/ML Engineering Skills" 
-  ]
-};
+    "Languages & Frameworks": [
+      "Angular (18+)",
+      "React",
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "HTML5 & CSS3",
+      "Bootstrap",
+    ],
+    "Database & Tools": [
+      "MongoDB (Aggregation Pipelines, Indexing)",
+      "SQL",
+      "Nx Monorepo",
+      "RxJS & NgRx",
+      "Jest",
+      "Git & GitHub",
+      "Docker",
+    ],
+    "Architecture & Practices": [
+      "RESTful API Design",
+      "JWT/OAuth Authentication",
+      "CI/CD Pipelines",
+      "CQRS Pattern",
+      "Unit Testing",
+      "Agile/Scrum",
+    ],
+    "Currently Learning": ["AI/ML Engineering Skills"],
+  };
 
   const skillsListDiv = document.getElementById("skills-list");
   for (const category in skills) {
@@ -97,24 +95,24 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
 
   const experiences = [
-  {
-    title: "Software Engineer",
-    company: "SYN IT Solutions Private Limited, Pune", // [cite: 56]
-    duration: "May 2023 - Present",
-    description: [
-      "Designed and developed RESTful APIs from scratch using Node.js and Express.js, implementing JWT-based authentication to secure endpoints and manage user sessions.", // [cite: 58]
-      "Architected the backend using the CQRS pattern to separate command and query responsibilities, ensuring highly scalable performance under peak travel booking loads.", // [cite: 59]
-      "Managed data storage in MongoDB and reduced data loading times by ~25% through strategic indexing and complex Aggregation Pipelines.", // [cite: 60]
-      "Built responsive, pixel-perfect UIs using Angular 18+ within an Nx monorepo. Improved page load performance by implementing lazy loading and code splitting, validated with Lighthouse and Core Web Vitals audits.", // [cite: 61, 62]
-      "Managed complex data streams and application state using RxJS and NgRx, reducing unnecessary re-renders and improving UI responsiveness.", // [cite: 63]
-      "Converted Figma designs into functional web pages in close collaboration with UX designers and product owners, and implemented i18n for seamless multi-language support.", // [cite: 64]
-      "Wrote comprehensive unit tests using Jest and managed Git version control and CI/CD pipelines with Docker to ensure stable, consistent deployments.", // [cite: 65]
-      
-      "Built dynamic, responsive frontend components using React for a user-facing e-commerce interface with a focus on performance and usability.", // [cite: 67]
-      "Managed data flow between the React frontend and a PHP backend, using SQL to efficiently query and manage relational product and order data." // [cite: 68]
-    ],
-  },
-];
+    {
+      title: "Software Engineer",
+      company: "SYN IT Solutions Private Limited, Pune", // [cite: 56]
+      duration: "May 2023 - Present",
+      description: [
+        "Built RESTful APIs using Node.js and Express.js, implementing JWT authentication to secure endpoints and user sessions.",
+        "Structured the backend using the CQRS pattern to separate command and query responsibilities for the WOP m-ticket platform.",
+        "Reduced MongoDB data load times by approximately 25% by writing Aggregation Pipelines and applying strategic database indexing.",
+        "Replaced RxJS observables with Angular Signals (using computed, effect, and toSignal) in components to manage local state.",
+        "Currently converting traditional Angular reactive forms into Signal-based forms to simplify form state handling.",
+        "Improved frontend performance within the Nx monorepo using lazy loading, route-level code splitting, and OnPush change detection.",
+        "Managed global application state using NgRx and built responsive UIs from Figma designs, including i18n for multi-language support.",
+        "Maintained CI/CD pipelines using Docker, tracked versions with Git, and wrote unit tests using Jest.",
+        "Developed user-facing frontend components using React for the Blancreme E-commerce interface.",
+        "Managed data flow between the React frontend and a PHP backend, using SQL to query product and order data.",
+      ],
+    },
+  ];
 
   const experienceSectionDiv = document.getElementById("experience-section");
   experiences.forEach((exp) => {
@@ -135,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "E-commerce Platform Development",
       years: "",
-      link:"https://github.com/patilvaibhav45/angular-node-ecommerce-app",
+      link: "https://github.com/patilvaibhav45/angular-node-ecommerce-app",
       image:
         "https://cdn.acowebs.com/wp-content/uploads/2019/02/Impact-of-eCommerce-On-Society.png",
       description: [
@@ -146,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Personal Portfolio Website",
       years: "",
-      link:"https://patilvaibhav45.github.io/portfolio/",
+      link: "https://patilvaibhav45.github.io/portfolio/",
       image:
         "https://c8.alamy.com/comp/2PX4CXK/personal-portfolio-with-profile-data-resume-or-self-improvement-to-attract-clients-and-employers-in-flat-cartoon-hand-drawn-templates-illustration-2PX4CXK.jpg",
       description: [
